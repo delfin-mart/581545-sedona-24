@@ -20,11 +20,11 @@
         </ul> 
 		</nav>
 	    </header>
-			<main>
+			<main class="contain">
 			<section class="intro">
 			<div class="banner">
 		<h1>
-		<span class="banner-blu">WELCOM</span> <span class="banner-italic">- to the gargeous -</span> SEDONA <span class="banner-italic white">"Becouse the Grand Canyon sucks!"</span>
+		<span class="banner-blu">WELCOM</span> <span class="banner italic">- to the gargeous -</span> SEDONA <span class="banner-white italic">"Becouse the Grand Canyon sucks!"</span>
 		</h1>
 			</div>		
 			<div class="poligon">
@@ -32,44 +32,64 @@
 		<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			</div>
 		</section>
-		<section class="advantages">
-			<div class="item-1"><h2 class="white">Настоящий городок</h2><p><span>- №1 -</span>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-		<img src="img/view-sedona1.jpg">
-			</div>
-		<div class="item-2"><img src="img/view-sedona2.jpg"><h2>Там есть мост дьявола</h2><p><span>- №2 -</span>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
-			</div>
-		<div class="item-3"><h2>Небольшая площадь</h2><p><span>- №3 -</span>Все достопримечательности находятся очень близко</p>
-			</div>
-		<div class="item-4"><h2>Красивая дорога</h2><p><span>- №4 -</span>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-			</div>
-		<div class="item-5"><h2>Мало туристов</h2><p><span>- №5 -</span>Юольшинство едет в Гранд Каньон и толпится там</p>
-			</div>
+		<section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+			 <ul class="features-list">
+          <li class="feature-item-1-left">
+			<h2>Настоящий городок</h2><p><span>- №1 -</span>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+		<img src="img/view-sedona1.jpg" alt="Седона. Вид города. Городская площадь" width="360" height="180">
+			</li>
+		  <li class="feature-item-2-right"><img src="img/view-sedona2.jpg" alt="Седона. Окрестности города. Горы" width="360" height="180">
+		  <h2>Там есть мост дьявола</h2><p><span>- №2 -</span>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+			</li>
+		  <li class="feature-item-3">
+		  <h2>Небольшая площадь</h2><p><span>- №3 -</span>Все достопримечательности находятся очень близко</p>
+			</li>
+		  <li class="feature-item-4">
+		  <h2>Красивая дорога</h2><p><span>- №4 -</span>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+			</li>
+	  <li class="feature-item-5">
+	  <h2>Мало туристов</h2><p><span>- №5 -</span>Большинство едет в Гранд Каньон и толпится там</p>
+			</li>
+			</ul>
 			</section>
 		<ul class="navigation">
-          <li class="hotel">
+          <li class="hotel">  <h2 class="visually-hidden">Жилье</h2>
 		  <a href="hotel.html" alt="НАЙТИ ЖИЛЬЕ В СЕДОНЕ">Жилье<span class="navigation">Рекомендуем пожить в настоящем мотеле, все как в кино!</span></a>
 		  </li>
-		<li class="eat">
+		<li class="eat">  <h2 class="visually-hidden">Еда</h2>
 		  <a href="eat.html" alt="Где поесть в Седоне">Еда<span class="navigation">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span></a>
 		  </li>
-		  <li class="souvenirs">
+		  <li class="souvenirs">  <h2 class="visually-hidden">Сувениры</h2>
 		  <a href="souvenirs.html" alt="Купить сувенир из Седоны">Сувениры<span class="navigation">Не только китайского, но и местного производства</span></a>
 		  </li>
         </ul>
 		</main>
+		<section class="select-hotel">
+		<h2 class="visually-hidden">Заказать гостиницу в Седоне</h2>
 		<form class="hotel-search">
    <fieldset>
     <legend><h3>ЗАИНТЕРЕСОВАЛИСЬ?</h3>
 	<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 	<p class="legend">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p></legend>
-	<p>ДАТА ЗАЕЗДА<input name="data"></p>
-	<p>ДАТА ВЫЕЗДА<input name="time"></p>
-    <p>ВЗРОСЛЫЕ<input name="number"></p>
-    <p>ДЕТИ<input name="number"></p>
-    <p><input type="submit" class="search" value="НАЙТИ"></p>
+		<label for="data-in">ДАТА ЗАЕЗДА</label>
+		  <input type="number" min="1" max="31" name="day">
+		  <input type="month" name="month">
+		<label for="data-off">ДАТА ВЫЕЗДА</label>
+  <input type="number" min="1" max="31" name="day">
+		  <input type="month" name="month">
+    	<label for="full age">ВЗРОСЛЫЕ</label>
+		<input name="number" min="1" max="50" name="full age">
+   <label for="children">ДЕТИ</label>
+   <input name="number" min="1" max="15" name="children">
+    <input type="submit" class="search" value="НАЙТИ">
    </fieldset>
   </form>
- <footer>
+  <div class="map">
+  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab23c383f5bcb8f5bc7a9af543a62a3a64b21c5a13759223e9baca4d3d1c5e3ee&amp;source=constructor" width="800" height="400" frameborder="0"></iframe>
+</div>
+</section>
+  <footer>
 <p>#VISITSEDONA</p>
 <ul>
 <li><a href="#twitter.sedona.html" alt="Седона в #twitter.sedona.html"></a></li>
