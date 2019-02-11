@@ -1,7 +1,203 @@
+*,  *::before, *::after
+{
+	box-sizing: inherit;
+}
+html 
+{
+	box-sizing: border-box;
+}
+.contant-bpx-component
+{
+	box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 1280px;
+ font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation,
+.advantage-list,
+.guest-menu,
+.social
+ {
+  list-style: none;
+}
+.site-navigation li h2
+{
+	font-size: 14px;
+}
+
+.site-navigation a,
+.site-navigation a:link,
+.site-navigation a:visited,
+.guest-menu a,
+.guest-menu a:link,
+.guest-menu a:visited
+ {
+  color: #333333;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.guest-menu a:hover,
+.guest-menu a:focus
+ {
+  color: #81b3d2;
+}
+
+.site-navigation a:active,
+.guest-menu a:active
+ {
+  color: #cacaca;
+}
+
+.main-navigation
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.site-navigation
+{
+	display: flex;
+	flex-direction: row;
+	z-index: 5;
+}
+
+.site-navigation li
+{
+	width: 240px;
+	margin-top: -10px;
+}
+
+.main-logo img 
+{
+	margin-top: -4px;
+
+}
+.content
+{
+	background-color: #ffffff;
+	width:1200px;
+	margin-left: 40px;
+	margin-right: 40px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+	}
+	
+.banner 
+{
+	margin-top: -35px;
+	z-index: 1;
+}
+
+.poligon 
+{
+	text-align: center;
+	z-index: 3;
+	margin-top: -180px;
+    height: 256px;	
+}	
+.poligon h2
+{	
+	font-size: 21px;
+}
+
 .hotel-selection {
-background-image:url(img/filter-background.jpg);
+	background-image:url(img/filter-background.jpg);
 	
 }
+
+.guest-menu
+{
+	display: flex;
+	flex-direction: row;
+	height: 333px;
+}
+ul.guest-menu li.guest-menu_item
+{
+	padding-top: 10px;
+	width: 400px;
+	background-color: #ffffff;
+	
+}
+
+.advantage-list
+{
+	display: flex;
+	flex-direction: column;
+}
+.advantage-list li
+{
+	height: 254px;
+	
+}
+
+.advantage-list li:first-of-type,
+.advantage-list li:nth-of-type(3)
+{
+   display:flex;
+   background-color: #81b3d2;
+	flex-direction: row;
+}
+
+.advantage-row 
+{
+   display:flex;
+	flex-direction: row;
+}
+
+.advantage-row li.advantage-item
+{
+   width: 400px;
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+li.advantage-card_text
+{
+	width: 400px;
+	color: #ffffff;
+
+}
+li.advantage-card_img
+{
+	width: 800px;
+	color: #ffffff;
+}
+
+.modal_select-hotel
+{
+	height: 297px:
+	
+}
+
+.site-footer
+{
+   display:flex;
+	flex-direction: row;
+	height: 118px:
+}
+
+.site-footer div
+{
+	width:400px;
+	
+}
+
 
 .visually-hidden {
   position: absolute;
