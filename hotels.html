@@ -2,33 +2,43 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>HTML Academy: Седона - гостиницы</title>
+		<title>HTML Academy: Седона проект Марии Артемьевой</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
-<!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
+	
 <body>
+<div class="content">
 	<header class="site-header">
-		<nav class="main-navigation" aria-label="Панель навигации">
-			<a class="main-logo" aria-label="Главная страница сайта" href="index.html">
-				<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
-			</a>
+		<a class="main-logo" aria-label="Главная страница сайта" href="index.html">
+			<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
+		</a>
+			<nav class="site-navigation" aria-label="Панель навигации">
 				<ul class="site-navigation">
-					<li><a href="info.html" aria-label="Информация о городе Седона">Информация</a></li>
-					<li><a href="gallary.html"aria-label="Фото и видеоматериалы о Седоне">Фото и видео</a></li>
-					<li><a href="map.html" aria-label="Карта штата">Карта штата</a></li>
-					<li><a href="hotel.html" aria-label="Гостиницы Седоны, выбрать гостиницу">Гостиницы</a></li>
+					<li><a class="site-navigation" href="info.html" aria-label="Информация о городе Седона">Информация</a></li>
+					<li><a class="site-navigation" href="gallary.html"aria-label="Фото и видеоматериалы о Седоне">Фото и видео</a></li>
+					<li><a class="site-navigation" href="map.html" aria-label="Карта штата">Карта штата</a></li>
+					<li><a class="site-navigation" href="hotel.html" aria-label="Гостиницы Седоны, выбрать гостиницу">Гостиницы</a></li>
 				</ul> 
 		</nav>
 	</header>
 	<main class="contain">
-		<form aria-label="Выбрать гостиницу" class="hotel-selection" style="width:100%" method="post"
+	<form aria-label="Выбрать гостиницу" class="hotel-selection" style="width:100%" method="post"
           action="https://echo.htmlacademy.ru">
-			<fieldset>
-				<h2 class="infrastructure_title">ИНФРАСТУКТУРА</h2>
+			<fieldset class="hotel-selection">
+			<div class="form-column">
+				<div class="form-column_1">
 					<ul class="infrastructure_card">
 						<li>
+							<h2 class="infrastructure_title">ИНФРАСТУКТУРА</h2>
+						</li>
+						<li>
 							<input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
-							<label for="swimming-pool">Бассейн</label>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+  <image id="checkbox-off" width="23" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAd0lEQVRIie3VsQ2AIBBG4YeVoXMgR9ANWcIVXMhOKn9DctpIBxQmvOoSkg8qDkleUpB0qk6neR4bWhRcugkYgRXYKW8GNiAmXOZNwFEBd8CVhuFzVN7z2Cb4W8ezdTxbx7N1PNu/8WjzbB99aYsBsekObbf9JX8DNzV4Kmom2t4AAAAASUVORK5CYII="/>
+</svg>
+<label for="swimming-pool">Бассейн</label>
 						</li>
 						<li>
 							<input type="checkbox" name="parking" id="parking">
@@ -38,8 +48,12 @@
 							<input type="checkbox" name="WI-FI" id="WI-FI">
 							<label for="WI-FI">WI-FI</label>
 						</li>
-				<h2 class="housing-type_title">ТИП ЖИЛЬЯ</h2>
+						</ul>
+				
 					<ul class="housing-type_card">
+						<li>
+							<h2 class="housing-type_title">ТИП ЖИЛЬЯ</h2>
+						</li>
 						<li>
 							<input type="checkbox" name="motel" id="hotel"checked >
 							<label for="hotel">Гостиница</label>
@@ -51,22 +65,37 @@
 						<li>
 							<input type="checkbox" name="apartment" id="apartment" checked>
 							<label for="apartment">Апартаменты</label>
-						</li>	
-						<li>
-							<input type="range" min="0" max="3000" name="housing-cost" id="housing-cost">
-							<label for="housing-cost">СТОИМОСТЬ В СУТКИ</label>
 						</li>
-					<input type="submit" class="search" value="показать">
+						</ul>
+						</div>
+						<div class="form-column_2">
+							<ul class="housing-cost">
+								<li>
+									<h2 class="housing-cost_title">СТОИМОСТЬ В СУТКИ</h2>
+								</li>
+								<li>
+									<input type="range" min="0" max="3000" name="housing-cost" id="housing-cost">
+									<label for="housing-cost" class="visually-hidden" >Стоимость в сутки</label>
+								</li>
+								<li>
+									<input type="submit" class="search" value="показать">
+								</li>
+							</ul>
+						</div>
+						</div>
 			</fieldset>
         </form>	
-			<p class="search">Найдено:<span> 3 </span></p>
-			<p>СОРТИРОВКА</p>
-				<ul class="select">
-				<li><a class="search" href="#">по цене</a></li>
-				<li><a class="search" href="#">по типу</a></li>
-				<li><a class="search" href="#">по рейтингу</a></li>
-			</ul>9
-			<div class="hotel-card">
+		<div class="select">
+				<ul class="select-row">
+				<li><p class="select-row">Найдено:<span> 3 </span></p></li>
+				<li>СОРТИРОВКА</li>
+				<li><a class="select-row" href="#">по цене</a></li>
+				<li><a class="select-row" href="#">по типу</a></li>
+				<li><a class="select-row" href="#">по рейтингу</a></li>
+			</ul>
+			
+		</div>
+		<div class="hotel-card">
 				<a href="img/hotel/big/amara.jpg" aria-label="Посмотреть страницу гостиницы">
 					<img src="img/amara-hotel.jpg" width="135" height="90" alt="Фотография гостиницы AMARA RESORT & SPA"></a>
 				<h3 class="hotel-card_title">AMARA RESORT & SPA</h3>
@@ -93,36 +122,42 @@
 						<img src="img/star.png" width="18" height="17">
 						<img src="img/star.png" width="18" height="17">
             </div>
-			<div class="hotel-card">
+						<div class="hotel-card">
 				<a href="img/hotel/big/villas.jpg" aria-label="Посмотреть страницу гостиницы">
 					<img src="img/villas-apart.jpg" width="135" height="90" alt="Фотография апартаментов VILLAS AT POCO DIABLO" ></a>
 				<h3 class="hotel-card_title">VILLAS AT POCO DIABLO</h3>
 					<p "class="hotel-card-description">Апартаменты</p>
 					<p class="hotel-card_price">от 2000 Р.</p>
 						<a class="hotel-card_button" href="villas.html">Подробнее</a>
-                        <a class="hotel-card_button-reserve" href="form-reserve.html" aria-label="Забронировать >Забронировать</a>
+                        <a class="hotel-card_button-reserve" href="form-reserve.html" aria-label="Забронировать" >Забронировать</a>
 					<p class="rank">РЕЙТИНГ: 8,5</p>
 						<img src="img/star.png" width="18" height="17" alt="two stars| Две звезды">
 						<img src="img/star.png" width="18" height="17">
 			</div>
 	</main>
-		 <footer>
+			   <footer class="footer-column">
+		 <div class="footer-column_tag">
             <p>#VISITSEDONA</p>
+			</div>
+		 <div class="footer-column_social">
 				<ul class="social">
 					<li class="social-tw">
-						<a href="#twitter.sedona.html" aria-label="Седона в #twitter.sedona.html"><img src="img/t.png" width="17" height="15" alt="Логотип Twitter"></a>
+						<a class="site-navigation" href="#twitter.sedona.html" aria-label="Седона в #twitter.sedona.html"><img src="img/t.png" width="17" height="15" alt="Логотип Twitter"></a>
 					
 					</li>
 					<li class="social-fb">
-						<a href="#facebook.sedona.html" aria-label="Седона в Фейсбук #facebook.sedona.html"><img src="img/fb-icon.png" width="12" height="22" alt="Логотип Facebook"></a>
+						<a class="site-navigation" href="#facebook.sedona.html" aria-label="Седона в Фейсбук #facebook.sedona.html"><img src="img/fb-icon.png" width="12" height="22" alt="Логотип Facebook"></a>
 				   </li>
 					<li class="social-youtube">
-						<a href="#youtube.sedona.html" aria-label="Седона на Ютуб #youtube.sedona.html"><img src="img/youtube.png" width="20" height="16" alt="Логотип Youtube"></a>
+						<a class="site-navigation" href="#youtube.sedona.html" aria-label="Седона на Ютуб #youtube.sedona.html"><img src="img/youtube.png" width="20" height="16" alt="Логотип Youtube"></a>
 					</li>
 				</ul>
-            <p><span class="weblab">WEBSITE BY</span></p>
-				<a class="weblab" href="htmlacademy.html" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"><img src="img/logo_name.png" width="115" height="41" alt="Логотип html-АКАДЕМИЯ"></a>
+				</div>
+				 <div class="footer-column_weblab">
+            <p class="weblab">WEBSITE BY</p>
+				<a class="site-navigation" class="weblab" href="htmlacademy.html" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"><img src="img/logo_name.png" width="115" height="41" alt="Логотип html-АКАДЕМИЯ"></a>
+				</div>
         </footer>
-    </body>
+		</div>
     </body>
 </html>

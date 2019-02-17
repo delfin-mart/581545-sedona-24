@@ -11,15 +11,15 @@
 <body>
 <div class="content">
 	<header class="site-header">
-		<nav class="main-navigation" aria-label="Панель навигации">
+		<a class="main-logo" aria-label="Главная страница сайта" href="index.html">
+			<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
+		</a>
+			<nav class="site-navigation" aria-label="Панель навигации">
 				<ul class="site-navigation">
-					<li><h2><a class="site-navigation" href="info.html" aria-label="Информация о городе Седона">Информация</a></h2></li>
-					<li><h2><a class="site-navigation" href="gallary.html"aria-label="Фото и видеоматериалы о Седоне">Фото и видео</a></h2></li>
-					<li><a class="main-logo" aria-label="Главная страница сайта" href="index.html">
-							<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
-						</a> </li>
-					<li><h2><a class="site-navigation" href="map.html" aria-label="Карта штата">Карта штата</a></h2></li>
-					<li><h2><a class="site-navigation" href="hotel.html" aria-label="Гостиницы Седоны, выбрать гостиницу">Гостиницы</a></h2></li>
+					<li><a class="site-navigation" href="info.html" aria-label="Информация о городе Седона">Информация</a></li>
+					<li><a class="site-navigation" href="gallary.html"aria-label="Фото и видеоматериалы о Седоне">Фото и видео</a></li>
+					<li><a class="site-navigation" href="map.html" aria-label="Карта штата">Карта штата</a></li>
+					<li><a class="site-navigation" href="hotel.html" aria-label="Гостиницы Седоны, выбрать гостиницу">Гостиницы</a></li>
 				</ul> 
 		</nav>
 	</header>
@@ -27,7 +27,7 @@
 			<section class="intro">
 				<div class="banner">
 					<h1 class="visually-hidden">WELCOM - to the gargeous - SEDONA "Becouse the Grand Canyon sucks!" Добро пожаловать в Седону!</h1>
-					<img src="img/intro.png" alt="Седона. Вид города. Городская площадь" width="100%" height="780">
+					<img src="img/intro.png" alt="Седона. Вид города. Городская площадь">
 				</div>		
 				<div class="poligon">
 					<h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
@@ -36,11 +36,10 @@
 			</section>
 			<section class="advantage">
 				<h2 class="visually-hidden">Преимущества</h2>
-					<ul class="advantage-list">
-					
+					<ul class="advantage-list">					
 						<li class="advantage-item">
-						<div class="advantage-card_text">
-							<h3>Настоящий городок</h3><p>- №1 -<br>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+						<div class="advantage-card">
+							<h3 class="advantage-card_title">Настоящий городок</h3><p class="advantage-card_number">- №1 -<p class="advantage-card_caption">Седона - не аттракцион для туристов, там течет своя жизнь</p>
 							</div>
 							<div class="advantage-card_img">
 							<img src="img/view-sedona1.jpg" alt="Седона. Вид города. Городская площадь" width="800" height="254">
@@ -49,24 +48,24 @@
 						<li>
 								<ul class="guest-menu">
 									<li class="guest-menu_item"> 
-											<a class="site-navigation" href="hotel.html" aria-label="НАЙТИ ЖИЛЬЕ В СЕДОНЕ">
+											<a class="guest-menu-link" href="hotel.html" aria-label="НАЙТИ ЖИЛЬЕ В СЕДОНЕ">
 												<img src="img/icon-1.png" width="74" height="70" alt="">
-													<h2>Жилье</h2>
-														<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+													<h3 class="advantage-card_title">Жилье</h3>
+														<p class="advantage-card_caption">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 											</a>
 									</li>
 									<li class="guest-menu_item">  
-										<a class="site-navigation" href="eat.html" aria-label="Где поесть в Седоне">
+										<a class="guest-menu-link" href="eat.html" aria-label="Где поесть в Седоне">
 											<img src="img/icon-2.png" width="74" height="70" alt="">
-												<h2>Еда</h2>
-													<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+												<h3 class="advantage-card_title">Еда</h3>
+													<p class="advantage-card_caption">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 										</a>
 									</li>
 									<li class="guest-menu_item"> 
-										<a class="site-navigation" href="souvenirs.html" aria-label="Купить сувенир из Седоны">
+										<a class="guest-menu-link" href="souvenirs.html" aria-label="Купить сувенир из Седоны">
 											<img src="img/icon-3.png" width="74" height="70" alt="">
-												<h2>Сувениры</h2>
-													<p>Не только китайского, но и местного производства</p>
+												<h3 class="advantage-card_title">Сувениры</h3>
+													<p class="advantage-card_caption">Не только китайского, но и местного производства</p>
 										</a>
 									</li>
 								</ul>		
@@ -77,49 +76,49 @@
 							<div class="advantage-card_img">
 							<img src="img/view-sedona2.jpg" alt="Седона. Окрестности города. Горы" width="800" height="254">
 							</div>
-							<div class="advantage-card_text">
-							<h3>Там есть мост дьявола</h3><p>- №2 -<br>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+							<div class="advantage-card">
+							<h3 class="advantage-card_title">Там есть мост дьявола</h3><p class="advantage-card_number">- №2 -<p class="advantage-card_caption">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
 							</div>							
 						</li>
 						<div class="advantage-row">
 						<li class="advantage-item">
-							<h3>Небольшая площадь</h3><p>- №3 -<br>Все достопримечательности находятся очень близко</p>
+							<h3 class="advantage-card_title">Небольшая площадь</h3><p class="advantage-card_number">- №3 -<p class="advantage-card_caption">Все достопримечательности находятся очень близко</p>
 						</li>
 						<li class="advantage-item">
-							<h3>Красивая дорога</h3><p>- №4 -<br>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+							<h3 class="advantage-card_title">Красивая дорога</h3><p class="advantage-card_number">- №4 -<p class="advantage-card_caption">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 						</li>
 						<li class="advantage-item">
-							<h3>Мало туристов</h3><p>- №5 -<br>Большинство едет в Гранд Каньон и толпится там</p>
+							<h3 class="advantage-card_title">Мало туристов</h3><p class="advantage-card_number">- №5 -<p class="advantage-card_caption">Большинство едет в Гранд Каньон и толпится там</p>
 						</li>
 						</div>
 					</ul>
 			</section>				
 		</main>
-		<section class="modal_select-hotel">
-			<h2 class="visually-hidden">Заказать гостиницу в Седоне</h2>		
-			<form class="hotel-search" aria-label="Заказать гостиницу в Седоне">
+		<section class="hotel-search">
+			<h2 class="visually-hidden">Заказать гостиницу в Седоне</h2>
+			<p class="hotel-search_title"><strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong></p>
+			<p class="hotel-search_caption">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<form class="hotel-search" aria-label="Заказать гостиницу в Седоне">
 				<fieldset>
-					<p><strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong></p>
-					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<h3>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
+					<h3 class="hotel-search_title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>	
 				<label for="data-in">ДАТА ЗАЕЗДА<input type="number" min="1" max="31" name="data-in_day">
 					<input type="month" name="data-in_month"></label>
 				<label for="data-off">ДАТА ВЫЕЗДА<input type="number" min="1" max="31" name="data-of_day">
 					<input type="data-off_month" name="month"></label>
 				<label for="full age">ВЗРОСЛЫЕ<input name="number" min="1" max="50" name="full age"></label>
 				<label for="children">ДЕТИ<input name="number" min="1" max="15" name="children"></label>
-					<input type="submit" aria-label="Найти гостиницу" class="search" value="НАЙТИ">
+					<button type="submit" aria-label="Найти гостиницу" class="search" value="НАЙТИ">НАЙТИ</button>
 				</fieldset>
 			</form>
 			<div class="map" content="map" tabindex="0">
 				<iframe aria-label="Карта: как проехать в Седону" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab23c383f5bcb8f5bc7a9af543a62a3a64b21c5a13759223e9baca4d3d1c5e3ee&amp;source=constructor" width="1200" height="475" frameborder="0"></iframe>
 			</div>
-		</section>
-         <footer class="site-footer">
-		 <div>
-            <h3>#VISITSEDONA</h3>
+		</section>        
+			   <footer class="footer-column">
+		 <div class="footer-column_tag">
+            <p>#VISITSEDONA</p>
 			</div>
-		 <div>
+		 <div class="footer-column_social">
 				<ul class="social">
 					<li class="social-tw">
 						<a class="site-navigation" href="#twitter.sedona.html" aria-label="Седона в #twitter.sedona.html"><img src="img/t.png" width="17" height="15" alt="Логотип Twitter"></a>
@@ -133,8 +132,8 @@
 					</li>
 				</ul>
 				</div>
-				 <div>
-            <p><span class="weblab">WEBSITE BY</span></p>
+				 <div class="footer-column_weblab">
+            <p class="weblab">WEBSITE BY</p>
 				<a class="site-navigation" class="weblab" href="htmlacademy.html" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"><img src="img/logo_name.png" width="115" height="41" alt="Логотип html-АКАДЕМИЯ"></a>
 				</div>
         </footer>
