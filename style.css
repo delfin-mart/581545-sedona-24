@@ -518,14 +518,13 @@ ul.select-row li
 	display: inline-block;
 	width: 150px;
 	margin-left: 70px;
-	
+
 }
 
 .select-row p
 {
 	font-size:21px;
 	font-weight: 700;
-	
 	
 }
 
@@ -536,9 +535,20 @@ ul.select-row li
 
 .hotel-card
 {
-	margin-left: 70px;
+	display: flex;
+	flex-direction: row;
+	width: 1200px;
 	height: 150px;
+	margin-left: 70px;
 	border-bottom: 0.5px solid #cacaca;
+	background-color:yellow;
+}
+
+.hotel-card_description,
+.hotel-card_img,
+.hotel-card_rank
+{	
+	display: block;
 }
 
 .visually-hidden {
