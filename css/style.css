@@ -16,7 +16,7 @@ body {
   padding: 0;
  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 15px;
+  line-height: 21px;
   text-transform: uppercase;
   font-weight: 400;
   color: #333333;
@@ -165,6 +165,7 @@ color: #81b3d2;
 .poligon h2
 {	
 	font-size: 21px;
+	line-height:26px;
 	margin-bottom: 40px;
 }
 
