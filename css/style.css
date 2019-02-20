@@ -195,9 +195,11 @@ ul.guest-menu li.guest-menu_item
 	align-items: center;
 }
 
-.guest-menu_item .advantage-card_title
+.advantage-card_title
 {
-	width: 400px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
 }
 
 .advantage-list
@@ -240,7 +242,7 @@ ul.guest-menu li.guest-menu_item
 {
 	margin-top: 50px;
 	margin-bottom: 27px;
-	font-size:21px;
+
 }
 
 .advantage-row .advantage-card_number
@@ -262,9 +264,8 @@ ul.guest-menu li.guest-menu_item
 	
 	margin-top: 50px;
 	margin-bottom: 27px;
-	width: 400px;
 	color: #ffffff;
-	font-size:21px;
+	
 }
 
 
@@ -342,8 +343,8 @@ ul.social a
 {   
 	padding-top: 12px;
 	display: block;
-	width: 48px;
-	height: 48px;
+	width: 49px;
+	height: 49px;
 	margin-right:6px;
 	background-color:#81b3d2;
 	
@@ -365,7 +366,7 @@ ul.social a:active
 {
 	display: flex;
 	flex-direction: row;
-	padding-top: 35px;
+	padding-top: 36px;
 }
 
 p.weblab 
@@ -399,10 +400,11 @@ p.weblab
 p.hotel-search
 {
 	text-align:center;
-	font-size:26px;
+	font-size:30px;
 	line-height:36px;
-	font-weight:700;
+	font-weight:500;
 	margin-bottom:35px;
+	letter-spacing:0.3px;
 }
 
 .hotel-search fieldset
@@ -412,6 +414,7 @@ p.hotel-search
 	height: 110px;
 	border: 0;
 	margin-bottom: 100px;
+	padding:0;
 	
 }
 
@@ -423,7 +426,7 @@ p.hotel-search
 
 .hotel-search_title
 {
-	display:block:
+	display:block;
 	vertical-align:top;
 	text-align:center;
 	font-size:21px;
@@ -441,7 +444,7 @@ p.hotel-search
 
 .hotel-search label
 {
-	font-size:12px;
+	font-size:14px;
 	line-height:26px;
 	font-weight:700;
 	
