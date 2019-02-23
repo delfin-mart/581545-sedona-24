@@ -48,21 +48,21 @@
 						<li>
 								<ul class="guest-menu">
 									<li class="guest-menu_item"> 
-											<a class="guest-menu-link" href="hotel.html" aria-label="НАЙТИ ЖИЛЬЕ В СЕДОНЕ">
+											<a class="guest-menu_link" href="hotel.html" aria-label="НАЙТИ ЖИЛЬЕ В СЕДОНЕ">
 												<img src="img/icon-1.png" width="74" height="70" alt="">
 													<h3 class="advantage-card_title">Жилье</h3>
 														<p class="advantage-card_caption">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 											</a>
 									</li>
 									<li class="guest-menu_item">  
-										<a class="guest-menu-link" href="eat.html" aria-label="Где поесть в Седоне">
+										<a class="guest-menu_link" href="eat.html" aria-label="Где поесть в Седоне">
 											<img src="img/icon-2.png" width="74" height="70" alt="">
 												<h3 class="advantage-card_title">Еда</h3>
 													<p class="advantage-card_caption">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 										</a>
 									</li>
 									<li class="guest-menu_item"> 
-										<a class="guest-menu-link" href="souvenirs.html" aria-label="Купить сувенир из Седоны">
+										<a class="guest-menu_link" href="souvenirs.html" aria-label="Купить сувенир из Седоны">
 											<img src="img/icon-3.png" width="74" height="70" alt="">
 												<h3 class="advantage-card_title">Сувениры</h3>
 													<p class="advantage-card_caption">Не только китайского, но и местного производства</p>
@@ -97,40 +97,39 @@
 		<section class="hotel-search">
 			<h2 class="visually-hidden">Заказать гостиницу в Седоне</h2>
 			<p class="hotel-search">Заинтересовались?</p>
-			<p class="hotel-search_caption">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				
+			<p class="hotel-search_caption">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<a class="hotel-search_button" href="#modal-popup">Поиск гостиницы в седоне</a>	
 			<div class="map" content="map" tabindex="0">
 				<iframe aria-label="Карта: как проехать в Седону" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab23c383f5bcb8f5bc7a9af543a62a3a64b21c5a13759223e9baca4d3d1c5e3ee&amp;source=constructor" width="1200" height="475" frameborder="0"></iframe>
 			</div>
 		</section>        
-			   <footer class="footer-column">
-		 <div class="footer-column_tag">
-            <p>#Visitsedona</p>
+		 <footer class="footer-column">
+			<div class="footer-column_tag">
+				<p class="tag">#Visitsedona</p>
 			</div>
-		 <div class="footer-column_social">
+			<div class="footer-column_social">
 				<ul class="social">
-					<li class="social-tw">
-						<a class="site-navigation" href="#twitter.sedona.html" aria-label="Седона в #twitter.sedona.html"><img src="img/t.png" width="17" height="15" alt="Логотип Twitter"></a>
+					<li>
+						<a class="social-icon tw" href="#twitter.sedona.html" aria-label="Седона в #twitter.sedona.html"></a>
 					
 					</li>
-					<li class="social-fb">
-						<a class="site-navigation" href="#facebook.sedona.html" aria-label="Седона в Фейсбук #facebook.sedona.html"><img src="img/fb-icon.png" width="12" height="22" alt="Логотип Facebook"></a>
-				   </li>
-					<li class="social-youtube">
-						<a class="site-navigation" href="#youtube.sedona.html" aria-label="Седона на Ютуб #youtube.sedona.html"><img src="img/youtube.png" width="20" height="16" alt="Логотип Youtube"></a>
+					<li>
+						<a class="social-icon fb" href="#facebook.sedona.html" aria-label="Седона в Фейсбук #facebook.sedona.html"></a>
 					</li>
+					<li>
+						<a class="social-icon youtube" href="#youtube.sedona.html" aria-label="Седона на Ютуб #youtube.sedona.html"></a>
+					</li>					
 				</ul>
-				</div>
-				 <div class="footer-column_weblab">
-            <p class="weblab">Website by</p>
-				<a class="site-navigation" class="weblab" href="htmlacademy.html" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"><img src="img/logo_name.png" width="115" height="41" alt="Логотип html-АКАДЕМИЯ"></a>
-				</div>
+			</div>
+			<div class="footer-column_weblab">
+				<p class="weblab">Website by</p>
+					<a class="weblab" href="htmlacademy.html" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"><img src="img/logo_name.png" width="115" height="41" alt="Логотип html-АКАДЕМИЯ"></a>
+			</div>
         </footer>
 		<!----------------Modal-popup-------------->
 		<div class="modal-popup">
-		<form class="hotel-search" aria-label="Заказать гостиницу в Седоне">
+			<form class="hotel-search" aria-label="Заказать гостиницу в Седоне">
 				<fieldset>
-					<h3 class="hotel-search_title">Поиск гостиницы в седоне</h3>	
 				<label for="data-in">Дата заезда<input type="number" min="1" max="31" name="data-in_day">
 					<input type="month" name="data-in_month"></label>
 				<label for="data-off">Дата выезда<input type="number" min="1" max="31" name="data-of_day">
@@ -140,11 +139,11 @@
 					<button type="submit" aria-label="Найти гостиницу" class="search" value="НАЙТИ">Найти</button>
 				</fieldset>
 			</form>
-			</div>
-		<!------------------------------------------>
 		</div>
+		<!------------------------------------------>
+	</div>
 		
 		
-    </body>
+ </body>
 >>>>>>> cd23df9b3196ece4f6cfe04d41e64b0efbe0e41c
 </html>
