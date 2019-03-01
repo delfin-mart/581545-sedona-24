@@ -125,27 +125,39 @@
 			</div>
 			<div class="footer-column_weblab">
 				<p class="weblab">Website by</p>
-					<a class="weblab" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"><img src="img/logo_name.png" width="115" height="41" alt="Логотип html-АКАДЕМИЯ"></a>
+					<a class="weblab-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"> </a>
 			</div>
         </footer>
-		<div class="modal-popup">
+			<div class="modal-popup">
 			<form class="modal-popup" action="https://echo.htmlacademy.ru" method="post" aria-label="Заказать гостиницу в Седоне">
 				<fieldset>
-				<p class="modal-item">
-				<label ID="data-in">Дата заезда</label>
-				<input type="text" name="date-in" value="" placeholder="24 апреля 2017">
-				</p>
-				<p class="modal-item">					
-				<label ID="data-off">Дата выезда</label>
-				<input type="text" name="data-off" value="" placeholder="4 июля 2017">
-				</p>
-				<p class="modal-item_short">	
-				<label class="short" ID="full-age">Взрослые</label>
-				<input class="short" type="text" name="full age" placeholder="   2   ">
-				<label class="short" ID="children">Дети</label>
-				<input class="short" type="text" name="children" placeholder="   0   ">
-				</p>		
-				<button class="modal-btn" type="submit" aria-label="Найти гостиницу" value="Найти">Найти</button>
+					<p class="modal-item">
+						<label ID="data-in">Дата заезда</label>
+						<input type="text" id="date-in" name="date-in" value="" placeholder="24 апреля 2017">
+							<svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 22">
+							<g>
+								<path class="st0" d="M4 8h3v2H4zM4 12h3v2H4zM4 16h3v2H4zM9 8h3v2H9zM9 12h3v2H9zM9 16h3v2H9zM14 8h3v2h-3zM14 12h3v2h-3zM14 16h3v2h-3z" />
+								<path class="st0" d="M19 2h-3V0h-1v2h-4V0h-1v2H6V0H5v2H2C.9 2 0 2.9 0 4v16c0 1.1.9 2 2 2h17c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm1 18c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h3v2h1V3h4v2h1V3h4v2h1V3h3c.6 0 1 .4 1 1v16z" />
+							</g>
+						</svg>
+					</p>
+					<p class="modal-item">
+						<label ID="data-off">Дата выезда</label>
+						<input type="text" name="data-off" value="" placeholder="4 июля 2017">
+						<svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 22">
+							<g>
+								<path class="st0" d="M4 8h3v2H4zM4 12h3v2H4zM4 16h3v2H4zM9 8h3v2H9zM9 12h3v2H9zM9 16h3v2H9zM14 8h3v2h-3zM14 12h3v2h-3zM14 16h3v2h-3z" />
+								<path class="st0" d="M19 2h-3V0h-1v2h-4V0h-1v2H6V0H5v2H2C.9 2 0 2.9 0 4v16c0 1.1.9 2 2 2h17c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm1 18c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h3v2h1V3h4v2h1V3h4v2h1V3h3c.6 0 1 .4 1 1v16z" />
+							</g>
+						</svg>
+					</p>
+					<p class="modal-item_short">
+						<label ID="full-age">Взрослые</label>
+						<input type="text" name="full age" placeholder="   2   ">
+						<label Id="children">Дети</label>
+						<input type="text" name="children" placeholder="   0   ">
+					</p>
+					<button class="modal-btn" type="submit" aria-label="Найти гостиницу" value="Найти">Найти</button>
 				</fieldset>
 			</form>
 		</div>
