@@ -435,7 +435,7 @@ ul {
 /* Далее - стили для формы поиска на главной странице - модальное окно  */
 .modal-popup {	
 	position: absolute;
-	top: 1140px;
+	top: 1114px;
 	left: 50%;
 	margin-left: -287.5px;
 	width: 575px;
