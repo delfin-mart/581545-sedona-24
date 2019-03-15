@@ -4,21 +4,22 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона проект Марии Артемьевой >>>>>>> cd23df9b3196ece4f6cfe04d41e64b0efbe0e41c</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-optimize.css">		
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<script defer src="js/sedona-optimize.js"></script>	
 	</head>
 <body>
 <div class="content">
 	<header class="site-header">
-		<a class="main-logo" aria-label="Главная страница сайта" href="index.html">
+		<div class="main-logo">
 			<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
-		</a>
+		</div>
 			<nav class="site-navigation" aria-label="Панель навигации">
 				<ul class="site-navigation">
 					<li><a class="site-navigation" href="info.html" aria-label="Информация о городе Седона">Информация</a></li>
 					<li><a class="site-navigation" href="gallary.html" aria-label="Фото и видеоматериалы о Седоне">Фото и видео</a></li>
 					<li><a class="site-navigation" href="map.html" aria-label="Карта штата">Карта штата</a></li>
-					<li><a class="site-navigation" href="hotel.html" aria-label="Гостиницы Седоны, выбрать гостиницу">Гостиницы</a></li>
+					<li><a class="site-navigation" href="hotels.html" aria-label="Гостиницы Седоны, выбрать гостиницу">Гостиницы</a></li>
 				</ul> 
 		</nav>
 	</header>
@@ -32,64 +33,69 @@
 					<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 				</div>
 			</section>
-				<section class="advantage">
+			<section class="advantage">
 				<h2 class="visually-hidden">Преимущества</h2>
 					<ul class="advantage">					
 						<li class="advantage-item">
-						<div class="advantage-card">
-							<h3 class="advantage-card_title">Настоящий городок</h3>
-							<p class="advantage-card_number">- №1 -</p>
-							<p class="advantage-card_caption">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+							<div class="advantage-card">
+								<h3 class="advantage-card_title">Настоящий городок</h3>
+								<p class="advantage-card_number">- №1 -</p>
+								<p class="advantage-card_caption">Седона - не аттракцион для туристов, там течет своя жизнь</p>
 							</div>
 							<img src="img/view-sedona1.jpg" width="800" height="256" alt="Седона. Вид города. Городская площадь">
 						</li>
 					</ul>						
-	  <ul class="goodness">
-		<li class="good"> 
-		<div class="service">
-					<a class="service_link" href="hotel.html" aria-label="Найти жилье в Седоне">
-							<h3 class="service_title-icon-1">Жилье</h3>
+					<ul class="goodness">
+						<li class="good"> 
+							<div class="service">
+								<a class="service_link" href="hotel.html" aria-label="Найти жилье в Седоне">
+								<h3 class="service_title-icon-1">Жилье</h3>
 								<p class="service_caption">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-					</a>
-					</div>
-				</li>
-			<li class="good">
-			<div class="service">
-				<a class="service_link" href="eat.html" aria-label="Где поесть в Седоне">
-					<h3 class="service_title-icon-2">Еда</h3>
-					<p class="service_caption">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-					</a>
-					</div>
-			</li>
-									<li class="good">
-									<div class="service">
-										<a class="service_link" href="souvenirs.html" aria-label="Купить сувенир из Седоны">
-											 <h3 class="service_title-icon-3">Сувениры</h3>
-													<p class="service_caption">Не только китайского, но и местного производства</p>
-										</a>
-										</div>
-									</li>
-								</ul>
+								</a>
+							</div>
+						</li>
+						<li class="good">
+							<div class="service">
+								<a class="service_link" href="eat.html" aria-label="Где поесть в Седоне">
+								<h3 class="service_title-icon-2">Еда</h3>
+								<p class="service_caption">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+								</a>
+							</div>
+						</li>
+						<li class="good">
+							<div class="service">
+								<a class="service_link" href="souvenirs.html" aria-label="Купить сувенир из Седоны">
+								<h3 class="service_title-icon-3">Сувениры</h3>
+								<p class="service_caption">Не только китайского, но и местного производства</p>
+								</a>
+							</div>
+						</li>
+					</ul>
 					<ul class="advantage">	
 						<li class="advantage-item">
 							<img src="img/view-sedona2.jpg" width="800" height="256" alt="Седона. Окрестности города. Горы">
-						<div class="advantage-card">
-							<h3 class="advantage-card_title">Там есть мост дьявола</h3>
-							<p class="advantage-card_number">- №2 -</p>
-							<p class="advantage-card_caption">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
-							</div>							
+								<div class="advantage-card">
+									<h3 class="advantage-card_title">Там есть мост дьявола</h3>
+									<p class="advantage-card_number">- №2 -</p>
+									<p class="advantage-card_caption">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+								</div>							
 						</li>
-						</ul>						
-						<ul class="advantage-row">				
-					<li class="advantage-card row">						
+					</ul>						
+					<ul class="advantage-row">				
+						<li class="advantage-card row">						
 							<h3 class="advantage-card_title">Небольшая площадь</h3>
-							<p class="advantage-card_number">- №3 -</p><p class="advantage-card_caption">Все достопримечательности находятся очень близко</p>
+							<p class="advantage-card_number">- №3 -</p>
+							<p class="advantage-card_caption">Все достопримечательности находятся очень близко</p>
 						</li>
 						<li class="advantage-card row">
-							<h3 class="advantage-card_title">Красивая дорога</h3><p class="advantage-card_number">- №4 -</p><p class="advantage-card_caption">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+							<h3 class="advantage-card_title">Красивая дорога</h3>
+							<p class="advantage-card_number">- №4 -</p>
+							<p class="advantage-card_caption">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 						</li>
 						<li class="advantage-card row">
-							<h3 class="advantage-card_title">Мало туристов</h3><p class="advantage-card_number">- №5 -</p><p class="advantage-card_caption">Большинство едет в Гранд Каньон и толпится там</p>
+							<h3 class="advantage-card_title">Мало туристов</h3>
+							<p class="advantage-card_number">- №5 -</p>
+							<p class="advantage-card_caption">Большинство едет в Гранд Каньон и толпится там</p>
 						</li>
 					</ul>
 			</section>	
@@ -100,7 +106,7 @@
 			<p class="hotel-search_caption">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<a class="hotel-search_btn" href="#modal-popup">Поиск гостиницы в Cедоне</a>	
 			<div class="map" content="map" tabindex="0">
-				<img src="img/map.png" width="1200" height="593" alt="Карта штата">
+				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.26492361874!2d-111.86517749327355!3d34.854448834498314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1551524015492" width="1200" height="593"  allowfullscreen></iframe>
 			</div>
 		</section>        
 		 <footer class="footer-column">
@@ -123,42 +129,49 @@
 			</div>
 			<div class="footer-column_weblab">
 				<p class="weblab">Website by</p>
-					<a class="weblab-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"> </a>
+				<a class="weblab-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"> </a>
 			</div>
         </footer>
-			<div class="modal-popup">
-			<form class="modal-popup" action="https://echo.htmlacademy.ru" method="post" aria-label="Заказать гостиницу в Седоне">
-				<fieldset>
-					<p class="modal-item">
-						<label ID="data-in">Дата заезда</label>
-						<input type="text" id="date-in" name="date-in" value="" placeholder="24 апреля 2017">
-							<svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 22">
-							<g>
-								<path class="st0" d="M4 8h3v2H4zM4 12h3v2H4zM4 16h3v2H4zM9 8h3v2H9zM9 12h3v2H9zM9 16h3v2H9zM14 8h3v2h-3zM14 12h3v2h-3zM14 16h3v2h-3z" />
-								<path class="st0" d="M19 2h-3V0h-1v2h-4V0h-1v2H6V0H5v2H2C.9 2 0 2.9 0 4v16c0 1.1.9 2 2 2h17c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm1 18c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h3v2h1V3h4v2h1V3h4v2h1V3h3c.6 0 1 .4 1 1v16z" />
-							</g>
-						</svg>
-					</p>
-					<p class="modal-item">
-						<label ID="data-off">Дата выезда</label>
-						<input type="text" name="data-off" value="" placeholder="4 июля 2017">
-						<svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 22">
-							<g>
-								<path class="st0" d="M4 8h3v2H4zM4 12h3v2H4zM4 16h3v2H4zM9 8h3v2H9zM9 12h3v2H9zM9 16h3v2H9zM14 8h3v2h-3zM14 12h3v2h-3zM14 16h3v2h-3z" />
-								<path class="st0" d="M19 2h-3V0h-1v2h-4V0h-1v2H6V0H5v2H2C.9 2 0 2.9 0 4v16c0 1.1.9 2 2 2h17c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm1 18c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h3v2h1V3h4v2h1V3h4v2h1V3h3c.6 0 1 .4 1 1v16z" />
-							</g>
-						</svg>
-					</p>
-					<p class="modal-item_short">
-						<label ID="full-age">Взрослые</label>
-						<input type="text" name="full age" placeholder="   2   ">
-						<label Id="children">Дети</label>
-						<input type="text" name="children" placeholder="   0   ">
-					</p>
-					<button class="modal-btn" type="submit" aria-label="Найти гостиницу" value="Найти">Найти</button>
-				</fieldset>
-			</form>
-		</div>
-	</div>	
- </body>
+			<section class="modal-popup">
+				<h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
+					<button class="modal-close" type="button">Закрыть</button>
+						<form class="modal" action="https://echo.htmlacademy.ru" method="post">
+							<fieldset>
+								<div class="modal-item">
+									<label for="data-in">Дата заезда</label>
+									<input type="text" name="data-in" value="" id="data-in" placeholder="24 апреля 2017">
+									<button>
+										<svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 22">
+											<g>
+												<path class="st0" d="M4 8h3v2H4zM4 12h3v2H4zM4 16h3v2H4zM9 8h3v2H9zM9 12h3v2H9zM9 16h3v2H9zM14 8h3v2h-3zM14 12h3v2h-3zM14 16h3v2h-3z" />
+												<path class="st0" d="M19 2h-3V0h-1v2h-4V0h-1v2H6V0H5v2H2C.9 2 0 2.9 0 4v16c0 1.1.9 2 2 2h17c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm1 18c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h3v2h1V3h4v2h1V3h4v2h1V3h3c.6 0 1 .4 1 1v16z" />
+											</g>
+										</svg>
+									</button>
+								</div>
+								<div class="modal-item">
+									<label for="data-off">Дата выезда</label>
+									<input type="text" name="data-off" value="" id="data-off" placeholder="4 июля 2017">
+									<button>
+										<svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 22">
+											<g>
+												<path class="st0" d="M4 8h3v2H4zM4 12h3v2H4zM4 16h3v2H4zM9 8h3v2H9zM9 12h3v2H9zM9 16h3v2H9zM14 8h3v2h-3zM14 12h3v2h-3zM14 16h3v2h-3z" />
+												<path class="st0" d="M19 2h-3V0h-1v2h-4V0h-1v2H6V0H5v2H2C.9 2 0 2.9 0 4v16c0 1.1.9 2 2 2h17c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm1 18c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h3v2h1V3h4v2h1V3h4v2h1V3h3c.6 0 1 .4 1 1v16z" />
+											</g>
+										</svg>
+									</button>
+								</div>
+								<p class="modal-item_short">
+								<label for="full-age">Взрослые</label>
+								<input type="text" name="age" id="full-age" placeholder="   2   ">
+								<label for="children">Дети</label>
+								<input type="text" name="child" id="children" placeholder="   0   ">
+								</p>
+								<button class="modal-btn" type="submit" aria-label="Найти гостиницу" value="Найти">Найти</button>
+							</fieldset>
+						</form>
+			</section>	
+	
+</div>	
+</body>
 </html>
