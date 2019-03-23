@@ -8,12 +8,12 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>	
 <body>
-<div class="content">
-	<header class="site-header">
-		<a class="main-logo" href="index.html" aria-label="Главная страница сайта города Седона">
-			<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
-		</a>
-			<nav class="site-navigation" aria-label="Панель навигации">
+	<div class="content">
+		<header class="site-header">
+			<a class="main-logo" href="index.html" aria-label="Главная страница сайта города Седона">
+				<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
+			</a>
+			<nav class="site-navigation">
 				<ul class="site-navigation">
 					<li><a class="site-navigation" href="info.html" aria-label="Информация о городе Седона">Информация</a></li>
 					<li><a class="site-navigation" href="gallary.html" aria-label="Фото и видеоматериалы о Седоне">Фото и видео</a></li>
@@ -21,7 +21,7 @@
 					<li><a class="site-navigation" href="hotels.html" aria-label="Гостиницы Седоны, выбрать гостиницу">Гостиницы</a></li>
 				</ul> 
 			</nav>
-	</header>
+		</header>
 		<main class="contain">
 			<form class="hotel-selection" method="post" action="https://echo.htmlacademy.ru">
 				<h2 class="visually-hidden">Выбрать гостиницу</h2>
@@ -42,13 +42,12 @@
 										<label for="WI-FI">WI-FI</label>
 									</li>
 								</ul>	
-							
 						</fieldset>	
 						<fieldset>
 							<legend>Тип жилья </legend>
 								<ul class="housing-type_card">
 									<li>
-										<input class="visually-hidden" type="checkbox" tabindex="0" name="motel" id="hotel" checked >
+										<input class="visually-hidden" type="checkbox" tabindex="0" name="hotel" id="hotel" checked >
 										<label for="hotel">Гостиница</label>
 									</li>	
 									<li>
@@ -77,7 +76,6 @@
 									<button class="btn-range" type="submit">Показать</button>
 						</fieldset>
 					</div>
-				
 			</form>	
 				<div class="select">
 					<ul class="select-row">
@@ -153,28 +151,28 @@
 						</div>
 				</div>
 		</main>	   
-		<footer class="footer-column">
-			<div class="footer-column_tag">
-				<p class="tag">#Visitsedona</p>
-			</div>
-			<div class="footer-column_social">
-				<ul class="social">
-					<li>
-						<a class="social-icon tw" href="#twitter.sedona.html" aria-label="Седона в #twitter.sedona.html"></a>
-					</li>
-					<li>
-						<a class="social-icon fb" href="#facebook.sedona.html" aria-label="Седона в Фейсбук #facebook.sedona.html"></a>
-				    </li>
-					<li>
-						<a class="social-icon youtube" href="#youtube.sedona.html" aria-label="Седона на Ютуб #youtube.sedona.html"></a>
-					</li>					
-				</ul>
-			</div>
-			<div class="footer-column_weblab">
-				<p class="weblab">Website by</p>
-				<a class="weblab-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"> </a>
-			</div>
-		</footer>
-</div>
+			<footer class="footer-column_site">
+				<div class="footer-column_tag">
+					<p class="tag">#Visitsedona</p>
+				</div>
+				<div class="footer-column_social">
+					<ul class="social">
+						<li>
+							<a class="social-icon tw" href="#twitter.sedona.html" aria-label="Седона в #twitter"></a>
+						</li>
+						<li>
+							<a class="social-icon fb" href="#facebook.sedona.html" aria-label="Седона в Фейсбук #facebook"></a>
+						</li>
+						<li>
+							<a class="social-icon youtube" href="#youtube.sedona.html" aria-label="Седона на Ютуб #youtube"></a>
+						</li>					
+					</ul>
+				</div>
+				<div class="footer-column_weblab">
+					<p class="weblab">Website by</p>
+					<a class="weblab-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ccылка на страницу разработчика сайта HTML-Академию"> </a>
+				</div>
+			</footer>
+	</div>
 </body>
 </html>

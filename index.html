@@ -2,28 +2,28 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>HTML Academy: Седона проект Марии Артемьевой >>>>>>> cd23df9b3196ece4f6cfe04d41e64b0efbe0e41c</title>
+		<title>HTML Academy: Седона проект Марии Артемьевой</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style-optimize.css">		
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-		<script defer src="js/sedona-optimize.js"></script>	
 	</head>
 <body>
-<div class="content">
-	<header class="site-header">
-		<div class="main-logo">
-			<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
-		</div>
-			<nav class="site-navigation" aria-label="Панель навигации">
+	<div class="content">
+		<header class="site-header">
+			<div class="main-logo">
+				<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
+			</div>
+			<nav class="site-navigation">
 				<ul class="site-navigation">
 					<li><a class="site-navigation" href="info.html" aria-label="Информация о городе Седона">Информация</a></li>
 					<li><a class="site-navigation" href="gallary.html" aria-label="Фото и видеоматериалы о Седоне">Фото и видео</a></li>
 					<li><a class="site-navigation" href="map.html" aria-label="Карта штата">Карта штата</a></li>
 					<li><a class="site-navigation" href="hotels.html" aria-label="Гостиницы Седоны, выбрать гостиницу">Гостиницы</a></li>
 				</ul> 
-		</nav>
-	</header>
-		<main class="contain">
+			</nav>
+		</header>
+	<main class="contain">
+		<h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
 			<section class="intro">
 				<div class="banner">
 					<img src="img/intro.png" width="1200" height="512" alt="Вид на окрестности Седоны. Седона круче, чем Гранд Каньон!">
@@ -99,16 +99,16 @@
 						</li>
 					</ul>
 			</section>	
-		</main>
-		<section class="hotel">
+			<section class="hotel">
 			<h2 class="visually-hidden">Заказать гостиницу в Седоне</h2>
 			<p class="hotel-search">Заинтересовались?</p>
 			<p class="hotel-search_caption">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<a class="hotel-search_btn" href="#modal-popup">Поиск гостиницы в Cедоне</a>	
 			<div class="map" content="map" tabindex="0">
-				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.26492361874!2d-111.86517749327355!3d34.854448834498314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1551524015492" width="1200" height="593"  allowfullscreen></iframe>
+				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.26492361874!2d-111.86517749327355!3d34.854448834498314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1551524015492" width="1200" height="590"  allowfullscreen></iframe>
 			</div>
-		</section>        
+		</section> 
+	</main>
 		 <footer class="footer-column">
 			<div class="footer-column_tag">
 				<p class="tag">#Visitsedona</p>
@@ -116,14 +116,13 @@
 			<div class="footer-column_social">
 				<ul class="social">
 					<li>
-						<a class="social-icon tw" href="#twitter.sedona.html" aria-label="Седона в #twitter.sedona.html"></a>
-					
+						<a class="social-icon tw" href="#twitter.sedona.html" aria-label="Седона в #twitter"></a>
 					</li>
 					<li>
-						<a class="social-icon fb" href="#facebook.sedona.html" aria-label="Седона в Фейсбук #facebook.sedona.html"></a>
+						<a class="social-icon fb" href="#facebook.sedona.html" aria-label="Седона в Фейсбук #facebook"></a>
 					</li>
 					<li>
-						<a class="social-icon youtube" href="#youtube.sedona.html" aria-label="Седона на Ютуб #youtube.sedona.html"></a>
+						<a class="social-icon youtube" href="#youtube.sedona.html" aria-label="Седона на Ютуб #youtube"></a>
 					</li>					
 				</ul>
 			</div>
@@ -163,15 +162,15 @@
 								</div>
 								<p class="modal-item_short">
 								<label for="full-age">Взрослые</label>
-								<input type="text" name="age" id="full-age" placeholder="   2   ">
+								<input type="text" name="age" id="full-age" placeholder="2">
 								<label for="children">Дети</label>
-								<input type="text" name="child" id="children" placeholder="   0   ">
+								<input type="text" name="child" id="children" placeholder="0">
 								</p>
 								<button class="modal-btn" type="submit" aria-label="Найти гостиницу" value="Найти">Найти</button>
 							</fieldset>
 						</form>
 			</section>	
-	
-</div>	
+	</div>	
+	<script defer src="js/sedona-optimize.js"></script>	
 </body>
 </html>

@@ -21,8 +21,7 @@
   	
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.add("modal-show");  
-   
+    popup.classList.add("modal-show");    
   });
   
   close.addEventListener("click", function (evt) {
